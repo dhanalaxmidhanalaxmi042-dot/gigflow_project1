@@ -1,0 +1,14 @@
+import sqlite3
+
+# Step 1: Create or connect to the database
+db = sqlite3.connect("gigflow.db")
+
+# Step 2: Create a table for jobs
+db.execute("CREATE TABLE jobs(id INTEGER PRIMARY KEY, title TEXT, desc TEXT)")
+
+# Step 3: Save changes and close
+db.commit()
+db.close()
+
+# Step 4: Exit Python shell
+exit()

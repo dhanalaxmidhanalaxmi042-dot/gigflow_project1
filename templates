@@ -1,0 +1,7 @@
+<h2>Gigflow Jobs</h2>
+<a href="/post"> post a Jobs</a>
+<ul>
+{% for j in jobs %}
+<li>{{j[1]}}-{{j[2]}}</li>
+{% endfor %}
+</ul>

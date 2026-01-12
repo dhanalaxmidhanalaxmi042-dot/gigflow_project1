@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GigFlow - Home</title>
+</head>
+<body>
+    <h1>GigFlow Jobs</h1>
+
+    <a href="/post">Post a New Job</a>
+    <hr>
+
+    {% for job in jobs %}
+        <p>
+            <b>{{ job[1] }}</b><br>
+            {{ job[2] }}
+        </p>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
